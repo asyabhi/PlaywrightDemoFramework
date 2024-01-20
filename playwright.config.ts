@@ -9,8 +9,8 @@ import { defineConfig, devices } from "@playwright/test";
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  timeout: 15 * 1000,
-  testDir: "./tests",
+  timeout: 10 * 1000,
+  testDir: "./tests/",
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -21,7 +21,19 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  reporter: [
+    [
+      "html",
+      // {
+      //   outputFolder: "myReport",
+      //   outputFile: "test-results.xml",
+      //   open: "never",
+      //   host: "0.0.0.0",
+      //   port: "9333",
+      // },
+    ],
+    ["allure-playwright"],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */

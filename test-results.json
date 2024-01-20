@@ -1,0 +1,233 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\playwright.config.ts",
+    "rootDir": "C:/Users/Abhitendra/Desktop/Playwright Projects/udemy/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Abhitendra/Desktop/Playwright Projects/udemy/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Abhitendra/Desktop/Playwright Projects/udemy/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 10000
+      },
+      {
+        "outputDir": "C:/Users/Abhitendra/Desktop/Playwright Projects/udemy/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Abhitendra/Desktop/Playwright Projects/udemy/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 10000
+      },
+      {
+        "outputDir": "C:/Users/Abhitendra/Desktop/Playwright Projects/udemy/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Abhitendra/Desktop/Playwright Projects/udemy/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 10000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.40.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "readJsonData.spec.ts",
+      "file": "readJsonData.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login Test with valid credentials for Orange HRM",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 10000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 9917,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-01-16T18:10:56.835Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "465ebf6bc5ede40a8266-d8cf57553c17696ff085",
+          "file": "readJsonData.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Login Test with invalid credentials for Orange HRM",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 10000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "timedOut",
+                  "duration": 10001,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 10000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 10000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\tests\\readJsonData.spec.ts",
+                        "column": 47,
+                        "line": 29
+                      },
+                      "message": "Error: locator.click: Test timeout of 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.oxd-userdropdown-tab')\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[type=\"submit\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".oxd-userdropdown-tab\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Logout\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclose()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\tests\\readJsonData.spec.ts:29:47\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-01-16T18:10:56.839Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\test-results\\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\test-results\\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\test-results\\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\\trace.zip"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 2,
+                  "status": "timedOut",
+                  "duration": 10001,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 10000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 10000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\tests\\readJsonData.spec.ts",
+                        "column": 47,
+                        "line": 29
+                      },
+                      "message": "Error: locator.click: Test timeout of 10000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('.oxd-userdropdown-tab')\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'button[type=\"submit\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 28 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".oxd-userdropdown-tab\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 30 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"text=Logout\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 31 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclose()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 32 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\tests\\readJsonData.spec.ts:29:47\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2024-01-16T18:11:08.504Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\test-results\\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\test-results\\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Abhitendra\\Desktop\\Playwright Projects\\udemy\\test-results\\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "465ebf6bc5ede40a8266-ebe83fdc793b51737645",
+          "file": "readJsonData.spec.ts",
+          "line": 19,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-01-16T18:10:56.397Z",
+    "duration": 23137.431,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

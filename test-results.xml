@@ -1,0 +1,95 @@
+<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="22.967093000000002">
+<testsuite name="readJsonData.spec.ts" timestamp="2024-01-16T18:12:30.908Z" hostname="chromium" tests="2" failures="1" skipped="0" time="29.323" errors="0">
+<testcase name="Login Test with valid credentials for Orange HRM" classname="readJsonData.spec.ts" time="9.324">
+</testcase>
+<testcase name="Login Test with invalid credentials for Orange HRM" classname="readJsonData.spec.ts" time="19.999">
+<failure message="readJsonData.spec.ts:19:5 Login Test with invalid credentials for Orange HRM" type="FAILURE">
+<![CDATA[  [chromium] › readJsonData.spec.ts:19:5 › Login Test with invalid credentials for Orange HRM ──────
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.click: Test timeout of 10000ms exceeded.
+    Call log:
+      - waiting for locator('.oxd-userdropdown-tab')
+
+
+      27 |   await page.locator('button[type="submit"]').click();
+      28 |
+    > 29 |   await page.locator(".oxd-userdropdown-tab").click();
+         |                                               ^
+      30 |   await page.locator("text=Logout").click();
+      31 |   await page.close();
+      32 | });
+
+        at C:\Users\Abhitendra\Desktop\Playwright Projects\udemy\tests\readJsonData.spec.ts:29:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.click: Test timeout of 10000ms exceeded.
+    Call log:
+      - waiting for locator('.oxd-userdropdown-tab')
+
+
+      27 |   await page.locator('button[type="submit"]').click();
+      28 |
+    > 29 |   await page.locator(".oxd-userdropdown-tab").click();
+         |                                               ^
+      30 |   await page.locator("text=Logout").click();
+      31 |   await page.close();
+      32 | });
+
+        at C:\Users\Abhitendra\Desktop\Playwright Projects\udemy\tests\readJsonData.spec.ts:29:47
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\readJsonData-Login-Test-with-invalid-credentials-for-Orange-HRM-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
